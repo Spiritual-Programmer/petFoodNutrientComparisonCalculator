@@ -203,6 +203,11 @@ select {
   }
   .doctor-picture {
     float: none;
+  }.paragraph p, .doctor-name, .occupation {
+    text-align: center;
+  }
+  .paragraph p, .doctor-name, .occupation {
+    text-align: center;
   }
   .radio-btn {
     flex: 100%;
