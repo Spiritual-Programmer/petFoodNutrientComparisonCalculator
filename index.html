@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
+  <title>Pet food nutrient comparison calculator</title>
+</head>
+<body>
+  
+</body>
+<h1>COMPARISON CALCULATOR</h1>
+
+<!-- Veterinarian comment -->
+<div class="doctor-summary">
+  <div class="doctor-picture">
+    <img class="doctor-picture" alt="Dr.Caitlyn Getty" src="https://www.nomnomnow.com/images/team/headshot_caitlyn.jpg">
+  </div>
+  <div class="paragraph">
+    <p>Percentages on commercial pet food labels are not reliable because they are based on weight, not calories, and the values are affected by many factors, including moisture, fiber and minerals. Use this calculator to get a more accurate picture of how another pet food brand compares with Nom Nom.</p>
+    <div class="doctor-name">Dr. Caitlyn Getty</div>
+    <div class="occupation">Scientific Affairs Veterinarian</div>
+  </div>
+</div>
+
+<!-- Dog or cat food recipe choice -->
+<div class="radio-btns">
+  <div class="radio-btn">
+    <input type="radio" id="dog" name="animal" value="dog_recipes" checked>
+    <label for="dog">Compare dog receipes</label>
+  </div>
+  <div class="radio-btn">
+    <input type="radio" id="cat" name="animal" value="cat_recipes">
+    <label for="cat">Compare cat receipes</label>
+  </div>
+</div>
+
+<!-- Dog food brand options -->
+<div class="dog-food-brand-comparison-container">
+  <div class="comparison-container-item">
+    <label>Name of pet food brand</label>
+    <select id="dog-brands" name="brands">
+      <option disabled value="0" selected>Select Pet Food Brand</option>
+      <option value="1">Blue Buffalo &reg; Wilderness &trade; Chicken</option>
+      <option value="2">Victor &reg; Nutra Pro</option>
+      <option value="3">Purina &reg; Beneful Beef</option>
+    </select>
+  </div>
+  <div class="comparison-container-item">
+    <label>Compare with Nom Nom</label>
+    <select id="dog-recipes" name="recipes">
+      <option value="1" selected>Beef Mash</option>
+      <option value="2">Chicken Cuisine</option>
+      <option value="3">Turkey Fare</option>
+      <option value="4">Pork Potluck</option>
+    </select>
+  </div>
+</div>
+
+<!-- Cat food brand options -->
+<div class="cat-food-brand-comparison-container">
+  <div class="comparison-container-item">
+    <label>Name of pet food brand</label>
+    <select id="cat-brands" name="brands">
+      <option disabled value="0" selected>Select Pet Food Brand</option>
+      <option value="1">Blue Buffalo &reg; Wilderness &trade; Chicken</option>
+      <option value="2">Iams &reg; Chicken</option>
+      <option value="3">Rachel Ray &reg; Chicken & Brown Rice</option>
+    </select>
+  </div>
+  <div class="comparison-container-item">
+    <label>Compare with Nom Nom</label>
+    <select id="cat-recipes" name="recipes">
+      <option value="1" selected>Chicken Cuisine</option>
+    </select>
+  </div>
+</div>
+
+<p id="content">Select a pet food brand to get a nutrient comparison</p>
+
+<!-- Food recipe details -->
+<main class="main">
+  <div class="food-flex-container">
+    <div id="food-brand-items">
+      <div><img id="brand-img" src=""></div>
+      <label id="protein-label"></label>
+      <h2 id="protein-amount"></h2>
+      <label id="fat-label"></label>
+      <h2 id="fat-amount"></h2>
+      <label id="carb-label"></label>
+      <h2 id="carb-amount"></h2>
+    </div>
+    <div id="nomnom-items">
+      <div><img id="logo-img" src=""></div>
+      <h3 id="recipe-name"></h3>
+      <div><img id="brand-img2" src=""></div>
+      <label id="protein-label2"></label>
+      <h2 id="protein-amount2"></h2>
+      <label id="fat-label2"></label>
+      <h2 id="fat-amount2"></h2>
+      <label id="carb-label2"></label>
+      <h2 id="carb-amount2"></h2>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h2 id="protein-info-title"></h2>
+      <p id="protein-info"></p>
+    </div>
+    <div class="flex-item">
+      <h2 id="fat-info-title"></h2>
+      <p id="fat-info"></p>
+    </div>
+    <div class="flex-item">
+      <h2 id="carb-info-title"></h2>
+      <p id="carb-info"></p>
+    </div>
+  </div>
+  <p id="unit-description"></p>
+  <p id="info-claim"></p>
+  <h2 id="btn-h2"></h2>
+  <div class="btn">
+    <button type="submit" class="startBtn"></button>
+</div>
+</main>
+
+<script src="script.js"></script>
+</html>
