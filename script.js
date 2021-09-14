@@ -74,13 +74,13 @@ function animal() { //Animal type Radio Buttons. Decides to populate either cat 
 function showDogRecipe() { //Displays current NomNom Recipe upon the selection of the other brands
   let recipeValue = document.getElementById("dog-recipes");
   let inputEvent = new Event('input');
-  recipeValue .dispatchEvent(inputEvent)
+  recipeValue .dispatchEvent(inputEvent);
 }
 
 function showCatRecipe() {////Displays current NomNom Recipe upon the selection of the other brands
   let recipeValue = document.getElementById("cat-recipes");
   let inputEvent = new Event('input');
-  recipeValue .dispatchEvent(inputEvent)
+  recipeValue .dispatchEvent(inputEvent);
 }
 
 function changeBrandDetails (cText,bImage,pAmount,fAmount,cAmount) {
@@ -125,76 +125,76 @@ function showDogFoodBrand(ev) {//Displays the different dog food brands
   detailInfo()
   dogFoodContent = ["Blue Buffalo ® Wilderness ™ Chicken contains 34% min protein, 15% min fat and has a calorie density of 3599kcal/kg.",
                     "Victor ® Nutra Pro contains 38% min protein, 18% min fat and has a calorie density of 3909kcal/kg.",
-                    "Purina ® Beneful Beef contains 23% min protein, 12% min fat and has a calorie density of 3558kcal/kg."
-                  ]
+                    "Purina ® Beneful Beef contains 23% min protein, 12% min fat and has a calorie density of 3558kcal/kg.",
+                   ];
   dogFoodBrandImages = ["https://www.nomnomnow.com/images/brands/blue_buffalo_chicken.jpg",
                         "https://www.nomnomnow.com/images/brands/victor.jpg",
-                        "https://www.nomnomnow.com/images/brands/purina_beef.jpg"
-                  ]                  
-  dogFoodBrandProteinList = ["99","101","69"]
-  dogFoodBrandFatList = ["44","49","37"]
-  dogFoodBrandCarbList = ["79","67","128"]
+                        "https://www.nomnomnow.com/images/brands/purina_beef.jpg",
+                       ];        
+  dogFoodBrandProteinList = ["99","101","69"];
+  dogFoodBrandFatList = ["44","49","37"];
+  dogFoodBrandCarbList = ["79","67","128"];
   for (let i = 0; i < select.length-1; i++) {
     if (select.value == i) {
     changeBrandDetails(dogFoodContent[i],dogFoodBrandImages[i],dogFoodBrandProteinList[i],
-      dogFoodBrandFatList[i],dogFoodBrandCarbList[i])
+      dogFoodBrandFatList[i],dogFoodBrandCarbList[i]);
     }
   }
 }
 
 function showCatFoodBrand(ev) {//Displays the different cat food brands
   let select = ev.target;
-  detailInfo()
+  detailInfo();
   catFoodContent = ["Blue Buffalo ® Wilderness ™ Chicken contains 40% min protein, 18% min fat and has a calorie density of 3832kcal/kg.",
                     "Iams ® Chicken contains 32% min protein, 15% min fat and has a calorie density of 3740kcal/kg.",
-                    "Rachael Ray ® Chicken & Brown Rice contains 34% min protein, 14% min fat and has a calorie density of 3635kcal/kg."
-                  ]
+                    "Rachael Ray ® Chicken & Brown Rice contains 34% min protein, 14% min fat and has a calorie density of 3635kcal/kg.",
+                   ];
   catFoodBrandImages = ["https://www.nomnomnow.com/images/brands/blue_buffalo_cat_chicken.jpg",
                         "https://www.nomnomnow.com/images/brands/iams_cat_chicken.jpg",
-                        "https://www.nomnomnow.com/images/brands/rachael_ray_cat_chicken.jpg"
-                  ]                  
-  catFoodBrandProteinList = ["108","90","98"]
-  catFoodBrandFatList = ["50","43","41"]
-  catFoodBrandCarbList = ["57","92","88"]
+                        "https://www.nomnomnow.com/images/brands/rachael_ray_cat_chicken.jpg",
+                       ];                  
+  catFoodBrandProteinList = ["108","90","98"];
+  catFoodBrandFatList = ["50","43","41"];
+  catFoodBrandCarbList = ["57","92","88"];
   for (let i = 0; i < select.length-1; i++) {
     if (select.value == i) {
     changeBrandDetails(catFoodContent[i],catFoodBrandImages[i],catFoodBrandProteinList[i],
-      catFoodBrandFatList[i],catFoodBrandCarbList[i])
+      catFoodBrandFatList[i],catFoodBrandCarbList[i]);
     }
   }
 }
 
 function showDogNomnomRecipe(ev) {//Displays the dog NomNom recipes
   let select = ev.target;
-  dogRecipesList = ["BEEF MASH","CHICKEN CUISINE","TURKEY FARE","PORK POTLUCK"]
+  dogRecipesList = ["BEEF MASH","CHICKEN CUISINE","TURKEY FARE","PORK POTLUCK"];
   dogRecipeImages = ["https://www.nomnomnow.com/images/recipes/bowl_beef_square.png",
                      "https://www.nomnomnow.com/images/recipes/bowl_chicken_square.png",
                      "https://www.nomnomnow.com/images/recipes/bowl_turkey_square.png",
-                     "https://www.nomnomnow.com/images/recipes/bowl_pork_square.png"
-                  ]                  
-  dogRecipeProteinList = ["93","80","85","76"]
-  dogRecipeFatList = ["48","56","41","48"]
-  dogRecipeCarbList = ["75","71","43","93"]
+                     "https://www.nomnomnow.com/images/recipes/bowl_pork_square.png",
+                    ];                  
+  dogRecipeProteinList = ["93","80","85","76"];
+  dogRecipeFatList = ["48","56","41","48"];
+  dogRecipeCarbList = ["75","71","43","93"];
   for (let i = 0; i < select.length; i++) {
     if (select.value == i) {
     changeRecipeDetails(dogRecipesList[i],dogRecipeImages[i],dogRecipeProteinList[i],
-      dogRecipeFatList[i],dogRecipeCarbList[i])
+      dogRecipeFatList[i],dogRecipeCarbList[i]);
     }
   }
 }
 
 function showCatNomnomRecipe(ev) {//Displays the cat NomNom recipes
   let select = ev.target;
-  catRecipesList = ["CHICKEN CUISINE"]
+  catRecipesList = ["CHICKEN CUISINE"];
   catRecipeImages = ["https://www.nomnomnow.com/images/recipes/bowl_cat_chicken_square.png",
-                  ]                  
-  catRecipeProteinList = ["163"]
-  catRecipeFatList = ["42"]
-  catRecipeCarbList = ["21"]
+                    ]                  
+  catRecipeProteinList = ["163"];
+  catRecipeFatList = ["42"];
+  catRecipeCarbList = ["21"];
   for (let i = 0; i < select.length; i++) {
     if (select.value == i) {
     changeRecipeDetails(catRecipesList[i],catRecipeImages[i],catRecipeProteinList[i],
-      catRecipeFatList[i],catRecipeCarbList[i])
+      catRecipeFatList[i],catRecipeCarbList[i]);
     }
   }
 }
