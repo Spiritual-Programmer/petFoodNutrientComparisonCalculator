@@ -1,223 +1,255 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
 body {
-  margin: 0px 10% 0px 10%;
+  margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
 }
 h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 75px;
-  color: #e6a65d;
+  font-size: 70px;
 }
-.doctor-summary {
-  background-color: #eee;
-  margin-bottom: 0;
+h2 {
+  font-size: 50px;
 }
-.doctor-picture {
-  padding: 10;
-  float: left;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
 }
-.doctor-picture img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  margin: auto auto;
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.brand-logo img {
+  width: 38px;
+  height: 54px;
+}
+.navbar-links ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.navbar-links a:hover {
+  color: red;
+}
+.toggle-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.social-icons ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-icons li {
+  list-style: none;
+}
+.social-icons a {
+  text-decoration: none;
+  padding: 0.25rem;
   display: block;
 }
-.paragraph {
-  padding: 5px 50px 20px 15px;
-  overflow: hidden;
-  font-size: 19.5px;
-  color: #3d3935;
+.social-icons img {
+  width: 50px;
+  height: 50px;
 }
-.doctor-name {
-  font-weight: bold;
+.background-image {
+  background-image: url("images/mainImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 25em;
 }
-.occupation {
-  font-style: italic;
-}
-.radio-btns {
-  padding-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.radio-btn {
-  padding-bottom: 10px;
-}
-.radio-btns label {
-  font-size: 19.5px;
-  color: #3d3935;
-}
-.dog-food-brand-comparison-container {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.dog-food-brand-comparison-container label {
-  font-size: 19px;
-  font-weight: bold;
-  color: #2a2825;
-}
-.cat-food-brand-comparison-container {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  display: none;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.cat-food-brand-comparison-container label {
-  font-size: 19px;
-  font-weight: bold;
-  color: #2a2825;
-}
-select {
-  font-size: 1.25rem;
-  padding: 10px 30px 10px 10px;
-  width: 100%;
-  border-radius: 5px;
-  justify-content: center;
-}
-.comparison-container-item {
-  flex-grow: 1;
-  width: 200px;
-  padding: 10px;
-  flex: 25%;
-}
-.main {
-  text-align: center;
-  color: #a7a8a9;
-  display: none;
-}
-#content {
-  color: #3d3935;
-  font-size: 18px;
-  text-align: center;
-}
-.food-brand {
-  display: flex;
-}
-.food-flex-container {
+.button {
+  margin-top: -15%;
   display: flex;
   justify-content: center;
-  padding: 25px;
-  margin: 10px;
+  padding-bottom: 12%;
 }
-.food-flex-container div {
-  padding: 0px;
-}
-.food-flex-container nomnom-items div {
-  justify-content: left;
-  text-align: left;
-  padding-left: 0px;
-}
-#food-brand-items {
-  border-right: 2px solid #eee;
-  padding: 83px 20px 0 0;
-  font-size: 19.5px;
-  text-align: right;
-}
-#nomnom-items {
-  padding: 20px 0 0 20px;
-  font-size: 19.5px;
-  text-align: left;
-}
-#logo-img {
-  height: 20px;
-  width: auto;
-}
-#recipe-name {
-  color: #e6a65d;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5em;
-  margin: 0;
-}
-#brand-img {
-  height: 250px;
-  width: 165px;
-  padding-bottom: 7px;
-}
-#brand-img2 {
-  height: 250px;
-  width: auto;
-  padding-bottom: 7px;
-}
-.main label {
-  font-size: 19.5px;
-}
-.main h2 {
+.join-button {
+  padding: 0.4em 1.75em;
   font-size: 35px;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
+  background: red;
+  border-radius: 4px;
+  border-width: 0px;
 }
-#protein-amount2 {
-  color: #fe5000;
+.join-button:hover {
+  letter-spacing: 2px;
+  background: orange;
+  cursor: pointer;
 }
-#fat-amount2 {
-  color: #e782a9;
+.main-title {
+  color: red;
+  text-align: center;
 }
-#carb-amount2 {
-  color: #e1cd00;
+.section-title {
+  text-align: center;
+}
+.section-paragraph {
+  text-align: center;
+  font-size: 19px;
+  margin: 0 15% 0 15%;
 }
 .flex-container {
   display: flex;
   padding: 10px;
-  margin: 10px;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
 }
-.flex-item {
-  border-right: 1px solid #eee;
-  padding: 0 20px 20px;
-  font-size: 19.5px;
-  text-align: left;
-  flex: 25%;
-}
-#btn-h2 {
-  color: #69b3e7;
-}
-.btn {
+.instructors .flex-item {
+  padding: 0px 25px 0px 25px;
   justify-content: center;
+}
+.instructors .flex-item img {
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+}
+.instructor-name,
+.class-name {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  font-size: 22;
+}
+.classes .flex-item {
+  justify-content: center;
+  padding: 0px 2.5em 3em 2.5em;
+  width: 350px;
+  height: 350px;
+}
+.classes .flex-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.class-schedule .flex-container {
   display: flex;
-  padding-bottom: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
-.startBtn {
-  padding: 10px 20px;
-  font-size: 20px;
-  background: #ee2737;
-  border-radius: 4px;
-  border-width: 0px;
-  color: #fff;
+.class-schedule .flex-item {
+  padding: 0px 1em 0em 1em;
 }
-.startBtn:hover {
-  letter-spacing: 2px;
-  background: #ffbe31;
-  cursor: pointer;
+.day {
+  background-color: rgb(209, 209, 209);
+  padding: 0.5em 3em 0.5em 3em;
+  margin-bottom: 2.5em;
+  font-size: 22px;
+  display: block;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  h1 {
-    font-size: 60px;
+.class-times {
+  background-color: rgb(209, 209, 209);
+  text-align: center;
+  margin: 0 0 0.5em 0;
+  padding: 0.5em 3em 0.5em 3em;
+  font-size: 22px;
+}
+.map {
+  margin-bottom: 6em;
+}
+.map img {
+  display: block;
+  margin: auto auto;
+  width: 70%;
+  padding: 5px;
+}
+.map-info {
+  text-align: center;
+  font-size: 22px;
+  margin: 41.5px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-image {
+  display: inline-block;
+}
+.footer-details {
+  font-size: 22px;
+  text-align: center;
+  display: block;
+}
+footer .social-icons img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 840px) {
+  .toggle-button {
+    display: flex;
   }
-  .doctor-picture {
-    float: none;
-  }.paragraph p, .doctor-name, .occupation {
+  .brand-logo img {
+    width: 33px;
+    height: 49px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .social-icons {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links li {
     text-align: center;
   }
-  .paragraph p, .doctor-name, .occupation {
-    text-align: center;
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
   }
-  .radio-btn {
-    flex: 100%;
+  .navbar-links.active {
+    display: flex;
   }
-  .comparison-container-item {
-    flex: 100%;
+  .button {
+    margin-top: -25%;
+    padding-bottom: 15%;
   }
-  .flex-item {
-    flex: 100%;
-    border-bottom: 1px solid #eee;
-    border-right: 0px;
+  footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 1150px) {
+  .footer-image {
+    display: none;
   }
 }

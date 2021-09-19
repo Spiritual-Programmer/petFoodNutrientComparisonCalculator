@@ -3,132 +3,208 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--fonts-->
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!---->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png">
-  <title>Pet food nutrient comparison calculator</title>
+  <link rel="shortcut icon" type="image/png" href="./images/h2hLogoWhite.png">
+  <title>Hand to Hand Martial Arts: Self Defense Academy - Brazilian Jiu-Jitsu, Karate, Kung Fu, Hakaru Japanese Jujitsu</title>
 </head>
 <body>
-  
+  <nav class="navbar">
+    <div class="brand-title">
+      <a href="#" class="brand-logo">
+      <img src="images/h2hLogoWhite.png">
+      </a>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span> 
+      <span class="bar"></span> 
+      <span class="bar"></span> 
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a id="classes" href="#">CLASSES</a></li>
+        <li><a id="schedule" href="#">SCHEDULE</a></li>
+        <li><a id="events" href="#">EVENTS</a></li>
+        <li><a id="about-us" href="#">ABOUT US</a></li>
+        <li><a id="gallery" href="#">GALLERY</a></li>
+        <li><a id="contact" href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="social-icons">
+      <ul>
+        <li><a id="instagram" target="_blank" href="#">
+          <img src="images/instagramLogo.svg"></a></li>
+        <li><a id="facebook" target="_blank" href="https://www.facebook.com/pages/category/Martial-Arts-School/Hand-To-Hand-Martial-Arts-Academy-206116319414212/">
+          <img src="images/facebookLogo.svg"></a></li>
+        <li><a id="youtube" target="_blank" href="https://www.youtube.com/user/HandtoHandMMA/featured">
+          <img src="images/youtubeLogo.svg"></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div>
+    <div class="background-image"></div>
+    <div class="button">
+      <button type="submit" class="join-button">Join Now</button>
+    </div>
+  </div>
+  <h1 class="main-title">Hand to Hand Martial Arts</h1>
+  <h2 class="section-title">Become a Warrior</h2>
+  <p class="section-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  </p>
+  <div class="instructors">
+    <h2 class="section-title">Meet Our Instructors</h2>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="images/elioGracie.jpg">
+        <label class="instructor-name">Ray Neveu</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/aaronNeveu.jpg">
+        <label class="instructor-name">Aaron Neveu</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/masOyama.jpg">
+        <label class="instructor-name">Mas Oyama</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/Khabib.png">
+        <label class="instructor-name">Khabib</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/Khabib.png">
+        <label class="instructor-name">Andy</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="classes">
+    <h2 class="section-title">Classes</h2>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="images/bjj.jpg">
+        <label class="class-name">Adult BJJ</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/karate.jpeg">
+        <label class="class-name">Karate 7+</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/kungFu.jpeg">
+        <label class="class-name">Kung Fu</label>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="images/youthBJJ.jpeg">
+        <label class="class-name">Youth BJJ</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/littleNinjas.jpeg">
+        <label class="class-name">Little Ninjas Ages 3-7</label>
+      </div>
+      <div class="flex-item">
+        <img src="images/japaneseJiuJitsu.jpeg">
+        <label class="class-name">Japanese Jiu-Jitsu</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="class-schedule">
+    <h2 class="section-title">Class Schedule</h2>
+    <div class="flex-container">
+      <div class="flex-item">
+        <label class="day">Monday</label>
+        <p class=class-times>Japanese Jujitsu
+          <br>6pm-8pm
+        </p>
+      </div>
+      <div class="flex-item">
+        <label class="day">Tuesday</label>
+        <p class=class-times>Little Ninjas Karate
+          <br>3pm-4:30pm
+        </p>
+        <p class=class-times>Karate Age 7+
+          <br>4pm-5pm
+        </p>
+        <p class=class-times>Youth BJJ
+          <br>5:30pm-6:30pm
+        </p>
+        <p class=class-times>Adult BJJ
+          <br>6:30pm-8pm
+        </p>
+      </div>
+      <div class="flex-item">
+        <label class="day">Wednesday</label>
+        <p class=class-times>Japanese Jujitsu
+          <br>6pm-8pm
+        </p>
+        <p class=class-times>Kung Fu
+          <br>7pm-9pm
+        </p>
+      </div>
+      <div class="flex-item">
+        <label class="day">Thursday</label>
+        <p class=class-times>Little Ninjas Karate
+          <br>3pm-4:30pm
+        </p>
+        <p class=class-times>Karate Age 7+
+          <br>4pm-5pm
+        </p>
+        <p class=class-times>Youth BJJ
+          <br>5:30pm-6:30pm
+        </p>
+        <p class=class-times>Adult BJJ
+          <br>6:30pm-8pm
+        </p>
+        <p class=class-times>No Gi Adult BJJ
+          <br>8pm-9:30pm
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <p class="map-info">Find us inside the large building right next to the skating area at Luckie Park in 29 palms</p>
+    <a href="https://goo.gl/maps/wFHuPHU7ySYgYx2FA" target="_blank">
+      <img src="images/h2hmap.PNG" alt="map of business">
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-title">
+      <a href="#" class="footer-logo">
+        <img src="images/h2hlogo_black.png">
+      </a>
+        <img class="footer-image" src="images/joshuatree.png">
+    </div> 
+        <p class="footer-details">
+          +1 (760) 819-2714
+          <br>h2h29@gmail.com
+          <br>5862 Luckie Ave, Twentynine Palms, CA 92277
+        </p>
+      <div class="social-icons">
+        <ul>
+          <li><a id="instagram" target="_blank" href="#">
+            <img src="images/instagramLogo.svg"></a></li>
+          <li><a id="facebook" target="_blank" href="https://www.facebook.com/pages/category/Martial-Arts-School/Hand-To-Hand-Martial-Arts-Academy-206116319414212/">
+            <img src="images/facebookLogo.svg"></a></li>
+          <li><a id="youtube" target="_blank" href="https://www.youtube.com/user/HandtoHandMMA/featured">
+            <img src="images/youtubeLogo.svg"></a></li>
+        </ul>
+      </div>
+  </footer>
+
 </body>
-<h1>COMPARISON CALCULATOR</h1>
-
-<!-- Veterinarian comment -->
-<div class="doctor-summary">
-  <div class="doctor-picture">
-    <img class="doctor-picture" alt="Dr.Caitlyn Getty" src="https://www.nomnomnow.com/images/team/headshot_caitlyn.jpg">
-  </div>
-  <div class="paragraph">
-    <p>Percentages on commercial pet food labels are not reliable because they are based on weight, not calories, and the values are affected by many factors, including moisture, fiber and minerals. Use this calculator to get a more accurate picture of how another pet food brand compares with Nom Nom.</p>
-    <div class="doctor-name">Dr. Caitlyn Getty</div>
-    <div class="occupation">Scientific Affairs Veterinarian</div>
-  </div>
-</div>
-
-<!-- Dog or cat food recipe choice -->
-<div class="radio-btns">
-  <div class="radio-btn">
-    <input type="radio" id="dog" name="animal" value="dog_recipes" checked>
-    <label for="dog">Compare dog receipes</label>
-  </div>
-  <div class="radio-btn">
-    <input type="radio" id="cat" name="animal" value="cat_recipes">
-    <label for="cat">Compare cat receipes</label>
-  </div>
-</div>
-
-<!-- Dog food brand options -->
-<div class="dog-food-brand-comparison-container">
-  <div class="comparison-container-item">
-    <label>Name of pet food brand</label>
-    <select id="dog-brands" name="brands">
-      <option disabled value="-1" selected>Select Pet Food Brand</option>
-      <option value="0">Blue Buffalo &reg; Wilderness &trade; Chicken</option>
-      <option value="1">Victor &reg; Nutra Pro</option>
-      <option value="2">Purina &reg; Beneful Beef</option>
-    </select>
-  </div>
-  <div class="comparison-container-item">
-    <label>Compare with Nom Nom</label>
-    <select id="dog-recipes" name="recipes">
-      <option value="0" selected>Beef Mash</option>
-      <option value="1">Chicken Cuisine</option>
-      <option value="2">Turkey Fare</option>
-      <option value="3">Pork Potluck</option>
-    </select>
-  </div>
-</div>
-
-<!-- Cat food brand options -->
-<div class="cat-food-brand-comparison-container">
-  <div class="comparison-container-item">
-    <label>Name of pet food brand</label>
-    <select id="cat-brands" name="brands">
-      <option disabled value="-1" selected>Select Pet Food Brand</option>
-      <option value="0">Blue Buffalo &reg; Wilderness &trade; Chicken</option>
-      <option value="1">Iams &reg; Chicken</option>
-      <option value="2">Rachel Ray &reg; Chicken & Brown Rice</option>
-    </select>
-  </div>
-  <div class="comparison-container-item">
-    <label>Compare with Nom Nom</label>
-    <select id="cat-recipes" name="recipes">
-      <option value="0" selected>Chicken Cuisine</option>
-    </select>
-  </div>
-</div>
-
-<p id="content">Select a pet food brand to get a nutrient comparison</p>
-
-<!-- Food recipe details -->
-<main class="main">
-  <div class="food-flex-container">
-    <div id="food-brand-items">
-      <div><img id="brand-img" src=""></div>
-      <label id="protein-label"></label>
-      <h2 id="protein-amount"></h2>
-      <label id="fat-label"></label>
-      <h2 id="fat-amount"></h2>
-      <label id="carb-label"></label>
-      <h2 id="carb-amount"></h2>
-    </div>
-    <div id="nomnom-items">
-      <div><img id="logo-img" src=""></div>
-      <h3 id="recipe-name"></h3>
-      <div><img id="brand-img2" src=""></div>
-      <label id="protein-label2"></label>
-      <h2 id="protein-amount2"></h2>
-      <label id="fat-label2"></label>
-      <h2 id="fat-amount2"></h2>
-      <label id="carb-label2"></label>
-      <h2 id="carb-amount2"></h2>
-    </div>
-  </div>
-  <div class="flex-container">
-    <div class="flex-item">
-      <h2 id="protein-info-title"></h2>
-      <p id="protein-info"></p>
-    </div>
-    <div class="flex-item">
-      <h2 id="fat-info-title"></h2>
-      <p id="fat-info"></p>
-    </div>
-    <div class="flex-item">
-      <h2 id="carb-info-title"></h2>
-      <p id="carb-info"></p>
-    </div>
-  </div>
-  <p id="unit-description"></p>
-  <p id="info-claim"></p>
-  <h2 id="btn-h2"></h2>
-  <div class="btn">
-    <button type="submit" class="startBtn"></button>
-</div>
-</main>
-
 <script src="script.js"></script>
 </html>
